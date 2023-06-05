@@ -96,6 +96,7 @@ button img {
     transition: 0.3s ease;
     border-radius: 10px;
     padding: 0px;
+    cursor:pointer;
 }
 
 
@@ -104,4 +105,10 @@ button img {
     background: var(--black);
     box-shadow: 10px 10px 20px black;
     transition: 0.3s ease;
+}
+
+@media(max-width: 684px){
+    .wrapper img {
+        width: 20%;
+    }
 }
