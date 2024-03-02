@@ -23,6 +23,7 @@ body {
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
     background:var(--background)
+    
 }
 
 .title {
@@ -36,9 +37,9 @@ body {
 
 input {
     display: block;
-    margin: 2rem 1rem 5rem 1rem;
+    margin: 2rem 2rem 5rem 1rem;
     height: 3rem;
-    width: 31rem;
+    width: 100%;
     background: var(--black2);
     border: 0;
     color: var(--foreground);
@@ -50,8 +51,8 @@ input {
 .wrapper {
     display: flex;
     margin: 2.5% auto;
-    width: 80%;
-    height: 90%;
+    width: 80vw;
+    height: 80vh;
     box-shadow: 10px 10px #6bc56844, 
                 20px 20px #6bc56844,
                 30px 30px #6bc56844;
@@ -61,44 +62,44 @@ input {
 }
 
 button img {
-    width: 40%;
-    height: 40%;
-    display:block;
-    margin: 0 auto;
-    object-fit: contain;
+    display: block;
+    margin-inline: auto;
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(5534%) hue-rotate(317deg) brightness(111%) contrast(71%) opacity(100%);
 }
 
 .wrapper img {
     width: 40%;
-    margin-right: 2rem;
     object-fit:cover;
     object-position: 90% 50%;
 }
 
 .bookmarks {
     display: grid;
+    aspect-ratio: 2;
     margin-top: -3rem;
     margin-bottom: 2rem;
     margin-left: 1rem;
-    margin-right: 1rem;
+    margin-right: -1rem;
     gap: 1.0rem;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
 
 .bookmarks button {
-    width: 100%;
-    height: 7rem;
+    width: 10vw;
     box-shadow: 5px 5px 10px black;
     background: var(--black2);
     border: 0;
     transition: 0.3s ease;
     border-radius: 10px;
-    padding: 0px;
+    padding: auto;
     cursor:pointer;
 }
 
+.right {
+    margin-left: 2rem;
+    padding-right: 3rem;
+}
 
 .bookmarks button:hover {
     transform: translate(-5px, -10px);
@@ -106,6 +107,7 @@ button img {
     box-shadow: 10px 10px 20px black;
     transition: 0.3s ease;
 }
+
 
 @media(max-width: 684px){
     .wrapper img {
